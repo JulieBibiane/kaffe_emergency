@@ -31,7 +31,6 @@
   padding: 0;
 }
 
-/* Basic input styles */
 input[type="text"],
 input[type="number"],
 select,
@@ -137,7 +136,6 @@ label {
   accent-color: #a67c52;
 }
 
-/* Helper text */
 .helper-text {
   font-size: 0.85rem;
   color: #666;
@@ -166,7 +164,7 @@ label {
   display: block;
 }
 
-/* Consent checkbox */
+/* Samtykke checkbox */
 .consent-wrapper {
   display: flex;
   align-items: start;
@@ -186,7 +184,7 @@ label {
   border-color: #7fb3d5;
 }
 
-/* Submit button */
+/* Indsend button */
 button[type="submit"] {
   background: #d62828;
   color: white;
@@ -212,14 +210,12 @@ button[type="submit"]:active {
   transform: translateY(0);
 }
 
-/* Intro text */
 .intro-text {
   color: #4a4a4a;
   margin-bottom: 2rem;
   font-size: 0.95rem;
 }
 
-/* Output section */
 .output-content {
   background: #f8f5f1;
   padding: 1.5rem;
