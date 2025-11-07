@@ -11,7 +11,7 @@
     <link rel="stylesheet" href="css/layout.css" />
     <link rel="stylesheet" href="css/burger.css" />
     <link rel="stylesheet" href="css/cards.css" />
-    <link rel="stylesheet" href="css/form.css" />
+    <link rel="stylesheet" href="css/forms.css" />
     <link rel="icon" type="image/png" href="img/fav.png" />
     <title>Emergency Site</title>
   </head>
@@ -37,16 +37,232 @@
       <h1>INDBERET</h1>
       <section id="form-section">
         <article id="form-info">
-          <h2>Overskrift</h2>
-          <p>Tekst</p>
+          <h2>Hvordan er din nødsitiuation gået?</h2>
         </article>
         <form id="webform"></form>
       </section>
       <section id="form-summary">
-        <h2>Summary</h2>
         <article>
-          <p class="placeholder">Opsummering</p>
+          <p class="placeholder"></p>
         </article>
+      </section>
+
+      <section>
+        <h2>Indsend din kaffe nødsituation oplevelse</h2>
+        <p class="intro-text">
+          Har du forsøgt en af vores anbefalede nødforanstaltninger i denne
+          krise? Så hører vi meget gerne fra dig. Udfyld venligst formularen
+          herunder, og hjælp os med at samle vigtig data, så vi sammen kan komme
+          igennem denne svære tid og finde den bedste løsning for os alle og
+          vores samfund.
+        </p>
+
+        <form
+          aria-label="Nødforanstaltninger form"
+          id="Nødforanstaltninger form"
+        >
+          <div class="form-group">
+            <label for="measure"
+              >Hvilken nødforanstaltning har du prøvet?</label
+            >
+            <select
+              id="measure"
+              name="measure"
+              aria-describedby="measure-error"
+              required
+            >
+              <option value="">Vælg en mulighed...</option>
+              <option value="energidrik">Energidrik alternativet</option>
+              <option value="te">Te konvertering</option>
+              <option value="træt">Livet uden koffein</option>
+            </select>
+            <p class="error-message" id="measure-error">
+              Vælg venligst en af mulighederne
+            </p>
+          </div>
+
+          <div class="form-group">
+            <label>Hvor effektiv var denne nødforanstaltning?</label>
+            <div class="radio-group">
+              <label class="radio-option">
+                <input
+                  type="radio"
+                  name="effectiveness"
+                  value="disaster"
+                  required
+                  aria-describedby="effectiveness-error"
+                />
+                <span>En katastrofe</span>
+              </label>
+              <label class="radio-option">
+                <input type="radio" name="effectiveness" value="poor" />
+                <span>Virkede slet ikke</span>
+              </label>
+              <label class="radio-option">
+                <input type="radio" name="effectiveness" value="neutral" />
+                <span>Ingen ændring</span>
+              </label>
+              <label class="radio-option">
+                <input type="radio" name="effectiveness" value="good" />
+                <span>Virkede lidt</span>
+              </label>
+              <label class="radio-option">
+                <input type="radio" name="effectiveness" value="miracle" />
+                <span>Mit liv er forandet(på en god måde)</span>
+              </label>
+            </div>
+            <p class="error-message" id="effectiveness-error">
+              Vælg venligst en af mulighederne
+            </p>
+          </div>
+
+          <div class="form-group">
+            <label for="productivity"
+              >Hvilken effekt havde det på dit arbejde?</label
+            >
+            <select
+              id="productivity"
+              name="productivity"
+              aria-describedby="productivity-error"
+              required
+            >
+              <option value="">Vælg en mulighed...</option>
+              <option value="produktiv">Aldrig været mere produktiv</option>
+              <option value="forbedring">Lille forbedring</option>
+              <option value="neutral">Ingen ændring</option>
+              <option value="worse">Blev værre</option>
+              <option value="asleep">Faldt i søvn</option>
+              <option value="syg">Blev nødt til at melde mig syg</option>
+            </select>
+            <p class="error-message" id="productivity-error">
+              Vælg venligst en af mulighederne
+            </p>
+          </div>
+
+          <div class="form-group">
+            <label>Har du oplevet nogle af disse bivirkninger?</label>
+            <p class="helper-text">(Vælg alle du har oplevet)</p>
+            <div class="checkbox-group">
+              <label class="checkbox-option">
+                <input type="checkbox" name="side_effects" value="rystelser" />
+                <span>Rystelser</span>
+              </label>
+              <label class="checkbox-option">
+                <input type="checkbox" name="side_effects" value="hovedpine" />
+                <span>Hovedpine</span>
+              </label>
+              <label class="checkbox-option">
+                <input type="checkbox" name="side_effects" value="træthed" />
+                <span>Træthed</span>
+              </label>
+              <label class="checkbox-option">
+                <input type="checkbox" name="side_effects" value="irritation" />
+                <span>Irritation</span>
+              </label>
+              <label class="checkbox-option">
+                <input
+                  type="checkbox"
+                  name="side_effects"
+                  value="eksistentiel krise"
+                />
+                <span>Eksistentiel krise</span>
+              </label>
+              <label class="checkbox-option">
+                <input type="checkbox" name="side_effects" value="bedre" />
+                <span>Har det faktisk bedre</span>
+              </label>
+              <label class="checkbox-option">
+                <input type="checkbox" name="side_effects" value="ingen" />
+                <span>Ingen</span>
+              </label>
+            </div>
+          </div>
+
+          <div class="form-group">
+            <label for="time"
+              >Hvor længe tror du, at du kan gå uden koffein? (I timer)</label
+            >
+            <input
+              type="number"
+              id="time"
+              name="time"
+              min="0"
+              max="168"
+              step="0.5"
+              placeholder="e.g., 2.5"
+              aria-describedby="time-error"
+              required
+            />
+            <p class="error-message" id="time-error">
+              Skriv venligst tiden som timer
+            </p>
+          </div>
+
+          <div class="form-group">
+            <label for="comments"
+              >Er der andet som du vil fortælle om din oplevelse?
+              (Valgfrit)</label
+            >
+            <textarea
+              id="comments"
+              name="comments"
+              placeholder="Fortæl os om din oplevelse..."
+            ></textarea>
+          </div>
+
+          <div class="form-group">
+            <div class="consent-wrapper">
+              <input
+                type="checkbox"
+                id="consent"
+                name="consent"
+                value="yes"
+                aria-describedby="consent-error"
+                required
+              />
+              <label for="consent">Min udfyldte data må gerne bruges.</label>
+            </div>
+            <p class="error-message" id="consent-error">
+              Venligst giv samtykke før du indsender dine svar.
+            </p>
+          </div>
+
+          <button type="submit">Indsend</button>
+        </form>
+      </section>
+
+      <section class="output">
+        <h2><span class="alert-badge">Oversigt</span></h2>
+        <div class="output-content" id="output-content">
+          <div class="output-item">
+            <div class="output-label">Nødforanstaltning:</div>
+            <div class="output-value" id="measure-output"></div>
+          </div>
+          <div class="output-item">
+            <div class="output-label">Effektivitet:</div>
+            <div class="output-value" id="effectiveness-output"></div>
+          </div>
+          <div class="output-item">
+            <div class="output-label">Arbejdspåvirkning:</div>
+            <div class="output-value" id="productivity-output"></div>
+          </div>
+          <div class="output-item">
+            <div class="output-label">Bivirkninger:</div>
+            <div class="output-value" id="side-effects-output"></div>
+          </div>
+          <div class="output-item">
+            <div class="output-label">Tid uden koffein:</div>
+            <div class="output-value" id="time-output"></div>
+          </div>
+          <div class="output-item">
+            <div class="output-label">Yderligere kommentarer:</div>
+            <div class="output-value" id="comments-output"></div>
+          </div>
+          <div class="output-item">
+            <div class="output-label">Samtykke:</div>
+            <div class="output-value" id="consent-output"></div>
+          </div>
+        </div>
       </section>
     </main>
     <footer>
@@ -76,6 +292,7 @@
       </nav>
     </footer>
     <script src="js/burger.js"></script>
+    <script src="js/register.js"></script>
     <!-- <script src="js/main.js"></script> -->
   </body>
 </html>
