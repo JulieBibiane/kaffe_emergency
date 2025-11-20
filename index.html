@@ -18,10 +18,15 @@
     <header>
       <nav>
         <div id="logotype-wrapper" class="logo">
-          <a href="index.html"> LOGO-TYPE </a>
+          <a href="index.html">
+            <img src="SVG/logotype.webp" alt="KAFFE" class="logo-image" />
+            MANGEL I DANMARK
+          </a>
         </div>
         <ul class="menu">
-          <li><a class="menuItem" href="instruction.html">Nærkontakt</a></li>
+          <li>
+            <a class="menuItem" href="instruction.html">Nødforanstaltninger</a>
+          </li>
           <li>
             <a class="menuItem" href="register.html">Indsend din oplevelse</a>
           </li>
@@ -35,89 +40,211 @@
     </header>
     <section id="main-disclamer">
       <div id="main-disclamer-content">
-        <img src="warning" alt="ICON" />
+        <img class="logo" src="SVG/kaffe_logo.webp" alt="ICON" />
         <div>
-          <h1>OVERSKRIFT</h1>
-          <p class="sub">Underrubrik</p>
+          <h1>BREAKING: National kaffe mangel krise</h1>
+          <p class="sub"></p>
         </div>
       </div>
     </section>
+    <div class="news-banner">
+      <div class="banner-content">
+        <span
+          >🚨 BREAKING NEWS: Kaffe mangel fortsætter • Produktivitet på
+          arbejdspladser falder med 87% • Borgere må ty til nødforanstaltninger
+          •</span
+        >
+        <span
+          >🚨 BREAKING NEWS: Kaffe mangel fortsætter • Produktivitet på
+          arbejdspladser falder med 87% • Borgere må ty til nødforanstaltninger
+          •</span
+        >
+      </div>
+    </div>
     <main>
       <section id="daily">
         <article class="daily_card">
-          <img src="" alt="teaser_img" />
+          <img src="SVG/produktivitet_.webp" alt="teaser_img" />
           <div class="daily_text">
-            <h2>Teaser</h2>
+            <h2>Produktivitet på arbejdspladser falder med 87%</h2>
             <p>
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellat
-              magnam ducimus ea, sed minima asperiores.
+              BREAKING: Produktivitet på arbejdspladser landet over, har nået
+              laveste punkt nogensinde.
             </p>
-            <a href="" class="cta_btn">Se mere</a>
+            <button class="cta_btn open-modal" data-modal="modal1">
+              Læs mere her
+            </button>
           </div>
         </article>
         <article class="daily_card">
-          <img src="" alt="teaser_img" />
+          <img src="SVG/kaffebryg.webp" alt="teaser_img" />
           <div class="daily_text">
-            <h2>Teaser</h2>
+            <h2>
+              Mand forsøger at lave hjemmelavet kaffe af planter fra haven
+            </h2>
             <p>
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellat
-              magnam ducimus ea, sed minima asperiores.
+              BREAKING: Mand i København er indlagt på hospitalet efter at have
+              forsøgt sig med en hjemmelavet kaffe, lavet på planter, fundet i
+              sin have.
             </p>
-            <a href="" class="cta_btn">Se mere</a>
+            <button class="cta_btn open-modal" data-modal="modal2">
+              Læs mere her
+            </button>
           </div>
         </article>
       </section>
       <section id="breaking">
         <article class="news_card">
-          <h3>Nyhed</h3>
-          <p>Lorem ipsum dolor sit, sed minima asperiores.</p>
-          <img src="" alt="news_img" />
-          <a class="cta_btn" href="">Læs mere</a>
+          <h3>Kaffe mangel skaber uro i landet</h3>
+          <p>
+            Der er endnu ingen udsigter til, at Danmark igen vil få kaffe til
+            landet, melder myndighederne.
+          </p>
+          <img class="card_kaffe" src="SVG/card_kaffe.webp" alt="news_img" />
+          <details>
+            <summary class="cta_btn">Læs mere</summary>
+            <div class="expanded-content">
+              <p>
+                Dette skaber uro blandt befolkningen, hvor der rapporteres kampe
+                om de få bønner, som endnu ikke er brygget.<br />
+                <br />
+                Der anbefales at man holder det tæt, hvis man skulle være heldig
+                at have lidt tilovers, fra inden krisen startede.
+              </p>
+            </div>
+          </details>
         </article>
         <article class="news_card">
-          <h3>Nyhed</h3>
-          <p>Lorem ipsum dolor sit, sed minima asperiores.</p>
-          <img src="" alt="news_img" />
-          <a class="cta_btn" href="">Læs mere</a>
+          <h3>Supermarkeder rapporterer om hamstring af te</h3>
+          <p>
+            Som følge af en af de anbefalede nødforanstaltninger her i krisen,
+            oplever supermarkeder landet over nu, at der hamstres te.
+          </p>
+          <img class="card_kaffe" src="SVG/te.webp" alt="news_img" />
+          <details>
+            <summary class="cta_btn">Læs mere</summary>
+            <div class="expanded-content">
+              <p>
+                Det, der startede som en logisk løsning, er blevet til kaos.
+                Supermarkedskæder rapporterer, at alle teprodukter, selv de
+                urte- og koffeinfri varianter, er blevet fuldstændig udsolgt i
+                hele landet.<br />
+                <br />
+                Den mest bizarre hændelse fandt sted i en Føtex i Aarhus, hvor
+                der opstod et slagsmål om den sidste æske Earl Grey.
+                Sikkerhedspersonale måtte gribe ind, da kunderne begyndte at
+                kaste frugt og grønt efter hinanden. <br />
+                <br />
+                Myndighederne minder borgerne om, at 'panikkøb af urtete ikke
+                vil løse kaffemanglen'.
+              </p>
+            </div>
+          </details>
         </article>
         <article class="news_card">
-          <h3>Nyhed</h3>
-          <p>Lorem ipsum dolor sit, sed minima asperiores.</p>
-          <img src="" alt="news_img" />
-          <a class="cta_btn" href="">Læs mere</a>
+          <h3>Mand arresteret for kaffe smugling</h3>
+          <p>
+            En mand er lige nu i politiets varetægt, efter et forsøg på at
+            smugle kaffebønner.
+          </p>
+          <img class="card_kaffe" src="SVG/robber.webp" alt="news_img" />
+          <details>
+            <summary class="cta_btn">Læs mere</summary>
+            <div class="expanded-content">
+              <p>
+                I det, som politiet kalder 'det mest åbenlyse smuglerforsøg i
+                historien', blev Henrik Larsen tilbageholdt ved grænsen med
+                cirka 3 kilogram premium arabica-bønner syet ind i sin jakke.<br />
+                <br />
+                "Han gik gennem tolden og efterlod et spor af kaffebønner efter
+                sig, som en tegneseriefigur," forklarede betjent Mette
+                Christensen.<br />
+                "Da vi spurgte, om han havde noget at erklære, sagde han "bare
+                min kærlighed til Danmark", mens han bogstaveligt talt rystede
+                bønnerne ud af ærmerne."<br />
+                <br />
+                På grund af krisen er det nu ulovligt at fragte kaffebønner over
+                grænser, og Larsen er hermed i politiets varetægt og afventer
+                dom.
+              </p>
+            </div>
+          </details>
         </article>
       </section>
     </main>
 
     <footer>
-      <nav class="some">
-        <ul>
-          <li><a href="">link</a></li>
-          <li><a href="">link</a></li>
-          <li><a href="">link</a></li>
-          <li><a href="">link</a></li>
-        </ul>
-      </nav>
-      <nav class="another">
-        <ul>
-          <li><a href="">link</a></li>
-          <li><a href="">link</a></li>
-          <li><a href="">link</a></li>
-          <li><a href="">link</a></li>
-        </ul>
-      </nav>
-      <nav class="yetanother">
-        <ul>
-          <li><a href="">link</a></li>
-          <li><a href="">link</a></li>
-          <li><a href="">link</a></li>
-          <li><a href="">link</a></li>
-        </ul>
-      </nav>
+      <div class="newsletter-section">
+        <h3>📢 Tilmeld Nyhedsbrev</h3>
+        <form class="newsletter-form">
+          <input type="email" placeholder="Din email" required />
+          <button type="submit" class="newsletter-btn">Tilmeld</button>
+        </form>
+        <p class="newsletter-disclaimer">
+          Modtag opdateringer om krisens udvikling
+        </p>
+      </div>
+
+      <div class="footer-bottom">
+        <p>
+          © 2024 National Kaffe Emergency |
+          <span class="status-critical">STATUS: KRITISK</span>
+        </p>
+      </div>
     </footer>
     <!-- Ligge opup tingene her -->
+    <div class="modal" id="modal1">
+      <div class="modal-content">
+        <button class="close-modal">&times;</button>
+        <h2>Produktiviteten falder landet over</h2>
+        <p>
+          I det, som analytikere kalder 'det største fald i produktivitet
+          nogensinde', rapporterer arbejdspladser over hele landet om
+          katastrofale fald i effektiviteten.<br />
+          <br />
+          Kontormedarbejder Maria Jensen, 34, beskrev sin oplevelse: 'Jeg har
+          læst den samme e-mail sytten gange, og jeg ved stadig ikke, hvad der
+          står i den. Jeg troede, jeg kunne klare det her, men klokken 10 måtte
+          jeg bukke under og melde mig syg.'<br />
+          <br />
+          Læger rapporterer en stigning på 400 % i tilfælde af 'kronisk gaben'
+          og 'spontane lure'. Dr. Lars Nielsen advarer: 'Vi ser folk falde i
+          søvn på arbejdspladserne'.<br />
+          <br />
+          Arbejdsministeren holdte en hastepressekonference i morges, selvom
+          kilder rapporterer, at han gabte meget under sin tale. "Vi tager dette
+          meget alvorligt," sagde han, før han stoppede op og spurgte, om nogen
+          havde ekstra energidrikke.
+        </p>
+      </div>
+    </div>
+
+    <div class="modal" id="modal2">
+      <div class="modal-content">
+        <button class="close-modal">&times;</button>
+        <h2>Mand indlagt efter indtagelse af 'nødkaffe'</h2>
+        <p>
+          Thomas Andersen, 41, blev opdaget af sin kone, mens han forsøgte at
+          brygge det, han kaldte 'nødkaffe', af en blanding af tørrede
+          mælkebøtter, brændte ristede brødkrummer og det, han troede var
+          'kaffelignende urter' fra sin have.<br />
+          <br />
+          "Jeg fandt ham i køkkenet klokken 3 om natten med syv forskellige
+          gryder i kog," fortalte hans kone til journalister. "Han blev ved med
+          at insistere på, at hvis han bare fik forholdene rigtigt, kunne han
+          skabe en erstatning for kaffe". I følge konen, så så manden det som en
+          mulighed for at blive rig.<br />
+          <br />
+          Desværre var kombinationen af planterne, som Andersen forsøgte sig
+          med, giftige. Han er derfor nu på hospitalet, men i bedring.<br />
+          Lægerne rapporterer, at Andersen er i bedring, selvom han fortsat er
+          overbevist om, at hans opskrift 'var tæt på et gennembrud'. Han har
+          fået ordineret hvile.
+        </p>
+      </div>
+    </div>
 
     <script src="js/burger.js"></script>
-    <!-- <script src="js/main.js"></script> -->
+    <script src="js/main.js"></script>
   </body>
 </html>

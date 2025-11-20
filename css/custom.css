@@ -14,7 +14,7 @@
   --color-menu-bg: #000000;
   /* Links */
   --color-link-bg: #f8f5f1;
-  --color-link-hover: #fff; /* used */
+  --color-link-hover: #6F90EB; /* used */
   --color-link-active: #99958f; /* used */
   --border-radius-links: 37px;
 
@@ -24,11 +24,11 @@
   --font-h2-size: 1rem;
   --font-h3-size: 1rem;
   --color-headline-bg: #000000;
-  --color-headline-text-page: #fceb94;
+  --color-headline-text-page: #f8f5f1;
 
   /* Tekst */
   --color-text: #000;
-  --color-text-inverted: #cdccc4;
+  --color-text-inverted: #f8f5f1;
 
   /*  Marginer */
   --margin-head-bottom: 5px;
@@ -37,7 +37,7 @@
   --border-radius: 37px;
 
   /* Cards */
-  --color-card-bg: #f8f5f1;
+  --color-card-bg: #b8d4e8;
   --color-cta-card-bg: #BF1818;
   /* news-cards */
   --color-news-bg: #b8d4e8;

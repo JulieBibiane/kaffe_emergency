@@ -1,0 +1,26 @@
+<svg viewBox="0 0 200 200" xmlns="http://www.w3.org/2000/svg">
+  <!-- Background -->
+  <rect width="200" height="200" fill="#a67c52"/>
+  
+  <!-- Alert triangle -->
+  <path d="M100 20 L180 170 L20 170 Z" fill="#d62828" stroke="#1a1a1a" stroke-width="4"/>
+  
+  <!-- Inner triangle -->
+  <path d="M100 35 L165 155 L35 155 Z" fill="#f8f5f1" stroke="none"/>
+  
+  <!-- Exclamation mark stem -->
+  <rect x="92" y="65" width="16" height="50" rx="3" fill="#d62828"/>
+  
+  <!-- Exclamation mark dot -->
+  <circle cx="100" cy="130" r="8" fill="#d62828"/>
+  
+  <!-- Caution stripe border (subtle) -->
+  <defs>
+    <pattern id="stripes" x="0" y="0" width="10" height="10" patternUnits="userSpaceOnUse" patternTransform="rotate(45)">
+      <rect x="0" y="0" width="5" height="10" fill="#b81f1f"/>
+      <rect x="5" y="0" width="5" height="10" fill="#d62828"/>
+    </pattern>
+  </defs>
+  
+  <path d="M100 20 L180 170 L20 170 Z" fill="none" stroke="url(#stripes)" stroke-width="6" opacity="0.3"/>
+</svg>
