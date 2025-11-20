@@ -263,3 +263,14 @@ footer {
     min-width: 100%;
   }
 }
+#logotype-wrapper a {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem; /* Space between logo and text */
+  text-decoration: none;
+}
+
+.logo-image {
+  height: 40px; /* Adjust size as needed */
+  width: auto;
+}
