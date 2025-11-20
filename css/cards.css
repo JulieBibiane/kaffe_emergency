@@ -177,3 +177,8 @@ summary::-webkit-details-marker {
     transform: translateY(0);
   }
 }
+
+.card_kaffe {
+  width: 75%;
+  height: 90%;
+}
