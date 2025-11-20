@@ -35,13 +35,27 @@
     </header>
     <section id="main-disclamer">
       <div id="main-disclamer-content">
-        <img src="warning" alt="ICON" />
+        <img class="logo" src="SVG/kaffe_logo.webp" alt="ICON" />
         <div>
-          <h1>OVERSKRIFT</h1>
+          <h1>BREAKING: National kaffemangel krise</h1>
           <p class="sub">Underrubrik</p>
         </div>
       </div>
     </section>
+    <div class="news-banner">
+      <div class="banner-content">
+        <span
+          >🚨 BREAKING NEWS: Kaffe mangel fortsætter • Produktivitet på
+          arbejdspladser falder med 87% • Borgere må ty til nødforanstaltninger
+          •</span
+        >
+        <span
+          >🚨 BREAKING NEWS: Kaffe mangel fortsætter • Produktivitet på
+          arbejdspladser falder med 87% • Borgere må ty til nødforanstaltninger
+          •</span
+        >
+      </div>
+    </div>
     <main>
       <section id="daily">
         <article class="daily_card">
@@ -52,7 +66,9 @@
               Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellat
               magnam ducimus ea, sed minima asperiores.
             </p>
-            <a href="" class="cta_btn">Se mere</a>
+            <button class="cta_btn open-modal" data-modal="modal1">
+              Se mere
+            </button>
           </div>
         </article>
         <article class="daily_card">
@@ -63,7 +79,9 @@
               Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellat
               magnam ducimus ea, sed minima asperiores.
             </p>
-            <a href="" class="cta_btn">Se mere</a>
+            <button class="cta_btn open-modal" data-modal="modal2">
+              Se mere
+            </button>
           </div>
         </article>
       </section>
@@ -72,19 +90,34 @@
           <h3>Nyhed</h3>
           <p>Lorem ipsum dolor sit, sed minima asperiores.</p>
           <img src="" alt="news_img" />
-          <a class="cta_btn" href="">Læs mere</a>
+          <details>
+            <summary class="cta_btn">Læs mere</summary>
+            <div class="expanded-content">
+              <p>Her er den fulde nyhed! Lorem ipsum dolor sit amet...</p>
+            </div>
+          </details>
         </article>
         <article class="news_card">
           <h3>Nyhed</h3>
           <p>Lorem ipsum dolor sit, sed minima asperiores.</p>
           <img src="" alt="news_img" />
-          <a class="cta_btn" href="">Læs mere</a>
+          <details>
+            <summary class="cta_btn">Læs mere</summary>
+            <div class="expanded-content">
+              <p>Her er den fulde nyhed! Lorem ipsum dolor sit amet...</p>
+            </div>
+          </details>
         </article>
         <article class="news_card">
           <h3>Nyhed</h3>
           <p>Lorem ipsum dolor sit, sed minima asperiores.</p>
           <img src="" alt="news_img" />
-          <a class="cta_btn" href="">Læs mere</a>
+          <details>
+            <summary class="cta_btn">Læs mere</summary>
+            <div class="expanded-content">
+              <p>Her er den fulde nyhed! Lorem ipsum dolor sit amet...</p>
+            </div>
+          </details>
         </article>
       </section>
     </main>
@@ -116,6 +149,29 @@
       </nav>
     </footer>
     <!-- Ligge opup tingene her -->
+    <div class="modal" id="modal1">
+      <div class="modal-content">
+        <button class="close-modal">&times;</button>
+        <h2>Fuld Historie 1</h2>
+        <p>
+          Her er den fulde nyhed om story 1! Lorem ipsum dolor sit amet,
+          consectetur adipisicing elit. Magnam nemo voluptatum accusamus quasi
+          exercitationem blanditiis eum cupiditate...
+        </p>
+      </div>
+    </div>
+
+    <div class="modal" id="modal2">
+      <div class="modal-content">
+        <button class="close-modal">&times;</button>
+        <h2>Fuld Historie 2</h2>
+        <p>
+          Her er den fulde nyhed om story 2! Lorem ipsum dolor sit amet,
+          consectetur adipisicing elit. Magnam nemo voluptatum accusamus quasi
+          exercitationem blanditiis eum cupiditate...
+        </p>
+      </div>
+    </div>
 
     <script src="js/burger.js"></script>
     <!-- <script src="js/main.js"></script> -->
